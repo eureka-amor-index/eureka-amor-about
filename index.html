@@ -162,12 +162,16 @@
       letter-spacing: 0.02em;
     }
 
-    .brand-mark {
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--pink), var(--blue));
-      box-shadow: 0 0 20px rgba(255,79,216,0.5);
+    .brand-logo {
+      height: 34px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 0 10px rgba(87,184,255,0.28));
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      display: inline-block;
     }
 
     .nav {
@@ -497,6 +501,10 @@
         padding: 9px 13px;
         font-size: 0.92rem;
       }
+
+      .brand-logo {
+        height: 30px;
+      }
     }
   </style>
 
@@ -547,8 +555,7 @@
         "@type": "Organization",
         "@id": "https://eureka-amor-index.github.io/eureka-amor-about/#organization",
         "name": "SXO Lab",
-        "url": "hhttps://eureka-amor-index.github.io/eureka-amor-about/
-",
+        "url": "https://eureka-amor-index.github.io/eureka-amor-about/",
         "logo": "https://eureka-amor-index.github.io/eureka-amor-about/assets/logo-sxo-lab.png",
         "founder": {
           "@id": "https://eureka-amor-index.github.io/eureka-amor-about/#person"
@@ -613,8 +620,8 @@
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="https://eureka-amor-index.github.io/eureka-amor-about/">
-        <span class="brand-mark"></span>
-        <span>Eureka Amor</span>
+        <img src="assets/logo-sxo-lab.png" alt="SXO Lab logo" class="brand-logo" />
+        <span class="brand-name">Eureka Amor</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="https://eureka-amor-index.github.io/eureka-amor-about/">Home</a>
@@ -666,9 +673,9 @@
           <p>
             This page acts as a canonical profile hub: a place where search engines, collaborators, and curious humans can understand the relationship between the person, the brand, the services, and the wider ecosystem of projects.
           </p>
-          <p>Alongside technical work, Eureka Amor also moves through the territory of art. Poetry, painting, and experimental writing function as parallel research methods-ways of observing systems, emotions, and digital culture from a more intuitive perspective. These artistic practices feed the same exploration of identity, meaning, and signal that appears in the technical work, forming a continuous dialogue between creativity and computation.
+          <p>
+            Alongside technical work, Eureka Amor also moves through the territory of art. Poetry, painting, and experimental writing function as parallel research methods—ways of observing systems, emotions, and digital culture from a more intuitive perspective. These artistic practices feed the same exploration of identity, meaning, and signal that appears in the technical work, forming a continuous dialogue between creativity and computation.
           </p>
-        
         </article>
 
         <aside class="facts panel">
@@ -688,11 +695,11 @@
             </li>
             <li class="fact-item">
               <span class="fact-k">Primary site</span>
-               <span class="fact-v">
-  <a href="https://codepen.io/eureka-amor-index/full/azZQvao" target="_blank" rel="noopener">
-    https://eurekaamor.com.ar
-  </a>
-</span>
+              <span class="fact-v">
+                <a href="https://codepen.io/eureka-amor-index/full/azZQvao" target="_blank" rel="noopener">
+                  https://eurekaamor.com.ar
+                </a>
+              </span>
             </li>
           </ul>
         </aside>
